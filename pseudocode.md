@@ -31,6 +31,12 @@ What does the set up look like? What are my tools for the job?
 * AXios
 * the API
 * Bootstrap, Some css for super specific style, html for the layout withbootstrap, javascript with REACT to build the UI.
+`npx create-react-app app (--template file:.template)` - optional if using GitPod.
 #### Questions
-  How do I make a single page website with my current knowledge? It functions like the weather app and the my tictactoe game because it is all on one page.
-How does React work 
+How do I make a single page website with my current knowledge? It functions like the weather app and the my tictactoe game because it is all on one page.<br>
+How does React work in the UI with javascript? How do I get into the sandbox to break/fix what I don't fully understand? I have barelyt touched React except in the tutorial. 
+* Beginner react project. something super easy to ease myself into the deep. Even if itis a sidequest.
+Design a component for React with its elements and children.
+
+#### STATE 
+* STate is calling upon the api's data to display onto the menu

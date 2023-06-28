@@ -27,7 +27,10 @@
 
 ### INIT
 What does the set up look like? What are my tools for the job?
-
-*AXios
+* Vs code or Gitpod
+* AXios
 * the API
-* REACT 
+* Bootstrap, Some css for super specific style, html for the layout withbootstrap, javascript with REACT to build the UI.
+#### Questions
+  How do I make a single page website with my current knowledge? It functions like the weather app and the my tictactoe game because it is all on one page.
+How does React work 

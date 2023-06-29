@@ -1,4 +1,5 @@
 import MyComponent from "./addboot";
+import GetComponent from "./axioscall"
 export default function Bodycomp()
 {
     return (
@@ -8,6 +9,7 @@ export default function Bodycomp()
                     Appetizers
                     {/* This is where i put the children from the API */}
                     <MyComponent />
+                    <GetComponent />
 
                 </div>
                 <div className="col">

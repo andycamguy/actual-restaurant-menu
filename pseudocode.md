@@ -40,3 +40,18 @@ Design a component for React with its elements and children.
 
 #### STATE 
 * STate is calling upon the api's data to display onto the menu
+### Render
+Header - populate the header with the logo and contact info
+
+Category - treat the menu category as an element inside the compoonent
+child
+child
+child
+
+Footer
+
+### End 
+
+## Functional Code
+
+```

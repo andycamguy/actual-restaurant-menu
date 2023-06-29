@@ -8,7 +8,7 @@ function GetComponent() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://astute-baton-362318.ue.r.appspot.com/api/json/');
+      const response = await axios.get('https://www.jsonkeeper.com/b/MDXW');
       console.log(response.data); // You can access the response data here
     } catch (error) {
       console.error(error);

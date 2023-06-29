@@ -55,3 +55,36 @@ Footer
 ## Functional Code
 
 ```
+function menu category ppress()
+{
+when button is pressed, populate with data based on which category button is pressed. api is called
+}
+
+function logo press()
+{
+when logo is pressed, goes back to the main menu
+}
+```
+## Object oriented
+class menu = {
+  - salads: { - `this is an element that would be populated from a button`
+    * tossed salad
+    * thrown salad `these are children inside the element that ppulate with props parameters`
+      }
+  - appetizers: { - `this is an element that would be populated from a button` 
+    * nacho libres
+    * brooklyn wiungs `these are children inside the element that ppulate with props parameters`
+      }
+  - entrees { - `this is an element that would be populated from a button `
+    *  The boomerang loin :a rare steak sseasoned in ashes of your grandma with a not so loaded baked potato.
+    * not so flat bread: its a pizza you dummy `these are children inside the element that ppulate with props parameters`
+   }
+  }
+class header= {
+img: logo (on press goto the primary set of populated data)
+img: contact info(goes to a page of contact info and leave a review)
+}
+
+class foooter  {
+img: contact info(goes to a page of contact info and leave a review)
+}

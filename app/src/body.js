@@ -1,5 +1,5 @@
 import MyComponent from "./addboot";
-import GetComponent from "./axioscall"
+import GetComponent from "./axioscall" // sorry Justin. out of steam this week
 export default function Bodycomp()
 {
     return (

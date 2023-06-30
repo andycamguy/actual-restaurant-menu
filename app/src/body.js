@@ -3,6 +3,7 @@ import GetComponent from "./axioscall"
 export default function Bodycomp()
 {
     return (
+        <>
         <div className="container flex">
             <div className="row">
                 <div className="col">
@@ -15,11 +16,12 @@ export default function Bodycomp()
                 <div className="col">
                    Entrees
                     {/* This is where i put the children from the API */}
-                    <MyComponent />
+                    
 
                 </div>
                 
             </div>
         </div>
+        </>
     );
 }

@@ -29,13 +29,15 @@ function GetComponent() {
     <>
       {data ? (
         <div>
-          <div>ID: {data.id}</div>
-          <div>Title: {data.title}</div>
-          <div>Cuisine Type: {data.cuisine_type}</div>
-          <div>Category: {data.category}</div>
-          <div>Description: {data.description}</div>
-          <div>Price: {data.price}</div>
-          <div>Spicy Level: {data.spicy_level}</div>
+          {data.map((menuItem, index) => (
+            <div key={index}>
+              <h3>{menuItem.title}</h3>
+              <p>Cuisine: {menuItem.cuisine_type}</p>
+              <p>Category: {menuItem.category}</p>
+              <p>Description: {menuItem.description}</p>
+              <hr />
+            </div>
+          ))}
         </div>
       ) : (
         <div>Loading...</div>

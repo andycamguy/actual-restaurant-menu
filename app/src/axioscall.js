@@ -4,34 +4,31 @@ import axios from 'axios';
 const API_URL = 'https://www.jsonkeeper.com/b/MDXW';
 
 function GetComponent() {
-  // Declare a state variable to store the fetched data
   const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
 
-  // useEffect hook to fetch the data when the component mounts
   useEffect(() => {
-    fetchData(); // Call the fetchData function
+    fetchData();
   }, []);
 
-  // Function to fetch the data from the API
   const fetchData = async () => {
     try {
-      // Make an HTTP GET request to the API endpoint
       const response = await axios.get(API_URL);
-
-      // Store the fetched data in the state variable
+      console.log(response.data);
       setData(response.data);
     } catch (error) {
-      console.error(error);
+      setError(error.message);
     }
   };
 
-  // JSX code to render the fetched data
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
   return (
     <>
-      {/* Conditionally render the fetched data if it is available */}
-      {data && (
+      {data ? (
         <div>
-          {/* Render the individual properties of the data object */}
           <div>ID: {data.id}</div>
           <div>Title: {data.title}</div>
           <div>Cuisine Type: {data.cuisine_type}</div>
@@ -40,6 +37,8 @@ function GetComponent() {
           <div>Price: {data.price}</div>
           <div>Spicy Level: {data.spicy_level}</div>
         </div>
+      ) : (
+        <div>Loading...</div>
       )}
     </>
   );

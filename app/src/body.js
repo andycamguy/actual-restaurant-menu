@@ -8,6 +8,7 @@ export default function Bodycomp()
             <div className="row">
                 <div className="col">
                     Appetizers
+                    
                     {/* This is where i put the children from the API */}
                     <MyComponent />
                     <GetComponent />

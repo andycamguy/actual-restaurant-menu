@@ -1,4 +1,5 @@
 import MyComponent from "./addboot";
+import Appetizers from "./appetizecomp";
 import GetComponent from "./axioscall" // sorry Justin. out of steam this week
 export default function Bodycomp()
 {
@@ -7,11 +8,11 @@ export default function Bodycomp()
         <div className="container flex">
             <div className="row">
                 <div className="col">
-                    Appetizers
+                   <Appetizers />
                     
                     {/* This is where i put the children from the API */}
                     <MyComponent />
-                    <GetComponent />
+                    
 
                 </div>
                 <div className="col">
